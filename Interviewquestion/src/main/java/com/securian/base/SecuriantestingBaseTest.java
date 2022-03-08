@@ -1,4 +1,4 @@
-package com.securion.base;
+package com.securian.base;
 
 import java.io.File;
 
@@ -19,7 +19,7 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import io.github.bonigarcia.wdm.ChromeDriverManager;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class SecuriontestingBaseTest {
+public class SecuriantestingBaseTest {
 			protected WebDriver driver;
 			 protected ExtentReports extent;
 			 protected ExtentTest logger;

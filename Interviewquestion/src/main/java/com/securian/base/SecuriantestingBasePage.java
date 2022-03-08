@@ -1,4 +1,4 @@
-package com.securion.base;
+package com.securian.base;
 import java.util.Iterator;
 import java.util.List;
 
@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-public class SecuriontestingBasePage {
+public class SecuriantestingBasePage {
 
 		
 		private static final int TIMEOUT = 5;
@@ -20,7 +20,7 @@ public class SecuriontestingBasePage {
 	    protected WebDriver driver;
 	    protected WebDriverWait wait;
 
-	    public SecuriontestingBasePage(WebDriver driver) {
+	    public SecuriantestingBasePage(WebDriver driver) {
 	    	this.driver = driver;
 	        wait = new WebDriverWait(driver, TIMEOUT, POLLING);
 	        PageFactory.initElements(driver,this);

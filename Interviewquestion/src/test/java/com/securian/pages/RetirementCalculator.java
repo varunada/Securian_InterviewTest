@@ -1,11 +1,11 @@
-package com.securion.pages;
+package com.securian.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.securion.base.SecuriontestingBasePage;
+import com.securian.base.SecuriantestingBasePage;
 
 /**
  * 
@@ -14,7 +14,7 @@ import com.securion.base.SecuriontestingBasePage;
  * Contains web elements of the Retirement calculator page and functions for interacting with them
  *
  */
-public class RetirementCalculator extends SecuriontestingBasePage {
+public class RetirementCalculator extends SecuriantestingBasePage {
 
 	WebDriver driver;
 	private static final int TIMEOUT = 5;

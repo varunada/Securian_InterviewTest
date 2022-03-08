@@ -3,7 +3,7 @@
 <parameter name="BrowserName" value="chrome"/>
   <test thread-count="1" name="Test" verbose="2">
     <classes>
-         <class name="com.securion.tests.RetirementCalculatorTest"/>
+         <class name="com.securian.tests.RetirementCalculatorTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

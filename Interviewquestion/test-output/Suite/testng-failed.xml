@@ -4,13 +4,13 @@
   <parameter name="BrowserName" value="chrome"/>
   <test name="Test(failed)">
     <classes>
-      <class name="com.securion.tests.RetirementCalculatorTest">
+      <class name="com.securian.tests.RetirementCalculatorTest">
         <methods>
           <include name="beforeTest"/>
           <include name="beforeTest"/>
           <include name="socialBenefitsToggle"/>
         </methods>
-      </class> <!-- com.securion.tests.RetirementCalculatorTest -->
+      </class> <!-- com.securian.tests.RetirementCalculatorTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

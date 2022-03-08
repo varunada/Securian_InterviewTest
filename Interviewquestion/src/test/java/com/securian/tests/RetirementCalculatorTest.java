@@ -1,4 +1,4 @@
-package com.securion.tests;
+package com.securian.tests;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
@@ -16,8 +16,8 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-import com.securion.base.SecuriontestingBaseTest;
-import com.securion.pages.RetirementCalculator;
+import com.securian.base.SecuriantestingBaseTest;
+import com.securian.pages.RetirementCalculator;
 
 import junit.framework.Assert;
 /**
@@ -27,7 +27,7 @@ import junit.framework.Assert;
  * Contains all the test cases using TestNg framework
  *
  */
-public class RetirementCalculatorTest extends SecuriontestingBaseTest{
+public class RetirementCalculatorTest extends SecuriantestingBaseTest{
 
 	WebDriver driver;
 	RetirementCalculator rc;

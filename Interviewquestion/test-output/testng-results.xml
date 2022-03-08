@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-08T04:23:03Z" name="Suite" finished-at="2022-03-08T04:24:04Z" duration-ms="60389">
+  <suite started-at="2022-03-08T05:10:36Z" name="Suite" finished-at="2022-03-08T05:12:39Z" duration-ms="122740">
     <groups>
     </groups>
-    <test started-at="2022-03-08T04:23:03Z" name="Test" finished-at="2022-03-08T04:24:04Z" duration-ms="60389">
-      <class name="com.securion.tests.RetirementCalculatorTest">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.securion.tests.RetirementCalculatorTest@127a7a2e]" started-at="2022-03-07T20:23:03Z" name="beforeTest" finished-at="2022-03-07T20:23:18Z" duration-ms="14449" status="PASS">
+    <test started-at="2022-03-08T05:10:36Z" name="Test" finished-at="2022-03-08T05:12:39Z" duration-ms="122740">
+      <class name="com.securian.tests.RetirementCalculatorTest">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.securian.tests.RetirementCalculatorTest@127a7a2e]" started-at="2022-03-07T21:10:36Z" name="beforeTest" finished-at="2022-03-07T21:10:53Z" duration-ms="16576" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="calcWithoutSocialBenefits()[pri:0, instance:com.securion.tests.RetirementCalculatorTest@127a7a2e]" started-at="2022-03-07T20:23:18Z" name="calcWithoutSocialBenefits" finished-at="2022-03-07T20:23:21Z" duration-ms="3500" status="PASS">
+        <test-method signature="calcWithoutSocialBenefits()[pri:0, instance:com.securian.tests.RetirementCalculatorTest@127a7a2e]" started-at="2022-03-07T21:10:53Z" name="calcWithoutSocialBenefits" finished-at="2022-03-07T21:10:56Z" duration-ms="3616" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- calcWithoutSocialBenefits -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.securion.tests.RetirementCalculatorTest@127a7a2e]" started-at="2022-03-07T20:23:21Z" name="beforeTest" finished-at="2022-03-07T20:23:22Z" duration-ms="305" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.securian.tests.RetirementCalculatorTest@127a7a2e]" started-at="2022-03-07T21:10:56Z" name="beforeTest" finished-at="2022-03-07T21:10:57Z" duration-ms="345" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.securion.tests.RetirementCalculatorTest@127a7a2e]" started-at="2022-03-07T20:23:22Z" name="beforeTest" finished-at="2022-03-07T20:23:32Z" duration-ms="10621" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.securian.tests.RetirementCalculatorTest@127a7a2e]" started-at="2022-03-07T21:10:57Z" name="beforeTest" finished-at="2022-03-07T21:11:08Z" duration-ms="11118" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,15 +37,64 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="socialBenefitsToggle()[pri:1, instance:com.securion.tests.RetirementCalculatorTest@127a7a2e]" started-at="2022-03-07T20:23:32Z" name="socialBenefitsToggle" finished-at="2022-03-07T20:23:35Z" duration-ms="2426" status="PASS">
+        <test-method signature="socialBenefitsToggle()[pri:1, instance:com.securian.tests.RetirementCalculatorTest@127a7a2e]" started-at="2022-03-07T21:11:08Z" name="socialBenefitsToggle" finished-at="2022-03-07T21:12:09Z" duration-ms="61077" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on MAC (1b13cb29ce92a4b35e07a1bc4bead9cd)] -> id: marital-status-toggle-group] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'varunas-air.lan', ip: 'fe80:0:0:0:140d:d57:747a:a959%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/xr/f7m8_2zn505...}, goog:chromeOptions: {debuggerAddress: localhost:57254}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1b13cb29ce92a4b35e07a1bc4bead9cd]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on MAC (1b13cb29ce92a4b35e07a1bc4bead9cd)] -> id: marital-status-toggle-group] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'varunas-air.lan', ip: 'fe80:0:0:0:140d:d57:747a:a959%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/xr/f7m8_2zn505...}, goog:chromeOptions: {debuggerAddress: localhost:57254}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1b13cb29ce92a4b35e07a1bc4bead9cd
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.securian.base.SecuriantestingBasePage.waitForVisibility(SecuriantestingBasePage.java:32)
+	at com.securian.pages.RetirementCalculator.validateYesSocialBenefits(RetirementCalculator.java:125)
+	at com.securian.tests.RetirementCalculatorTest.socialBenefitsToggle(RetirementCalculatorTest.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- socialBenefitsToggle -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.securion.tests.RetirementCalculatorTest@127a7a2e]" started-at="2022-03-07T20:23:35Z" name="beforeTest" finished-at="2022-03-07T20:23:35Z" duration-ms="285" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.securian.tests.RetirementCalculatorTest@127a7a2e]" started-at="2022-03-07T21:12:09Z" name="beforeTest" finished-at="2022-03-07T21:12:09Z" duration-ms="132" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.securion.tests.RetirementCalculatorTest@127a7a2e]" started-at="2022-03-07T20:23:35Z" name="beforeTest" finished-at="2022-03-07T20:23:46Z" duration-ms="10809" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.securian.tests.RetirementCalculatorTest@127a7a2e]" started-at="2022-03-07T21:12:09Z" name="beforeTest" finished-at="2022-03-07T21:12:22Z" duration-ms="12686" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -56,15 +105,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="defaultCalculatorValues()[pri:2, instance:com.securion.tests.RetirementCalculatorTest@127a7a2e]" started-at="2022-03-07T20:23:46Z" name="defaultCalculatorValues" finished-at="2022-03-07T20:23:46Z" duration-ms="574" status="PASS">
+        <test-method signature="defaultCalculatorValues()[pri:2, instance:com.securian.tests.RetirementCalculatorTest@127a7a2e]" started-at="2022-03-07T21:12:22Z" name="defaultCalculatorValues" finished-at="2022-03-07T21:12:22Z" duration-ms="613" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- defaultCalculatorValues -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.securion.tests.RetirementCalculatorTest@127a7a2e]" started-at="2022-03-07T20:23:46Z" name="beforeTest" finished-at="2022-03-07T20:23:48Z" duration-ms="1154" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.securian.tests.RetirementCalculatorTest@127a7a2e]" started-at="2022-03-07T21:12:22Z" name="beforeTest" finished-at="2022-03-07T21:12:23Z" duration-ms="1179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.securion.tests.RetirementCalculatorTest@127a7a2e]" started-at="2022-03-07T20:23:48Z" name="beforeTest" finished-at="2022-03-07T20:23:58Z" duration-ms="10821" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.securian.tests.RetirementCalculatorTest@127a7a2e]" started-at="2022-03-07T21:12:23Z" name="beforeTest" finished-at="2022-03-07T21:12:34Z" duration-ms="10095" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,15 +124,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="calcWithAdjValues()[pri:3, instance:com.securion.tests.RetirementCalculatorTest@127a7a2e]" started-at="2022-03-07T20:23:58Z" name="calcWithAdjValues" finished-at="2022-03-07T20:24:04Z" duration-ms="5269" status="PASS">
+        <test-method signature="calcWithAdjValues()[pri:3, instance:com.securian.tests.RetirementCalculatorTest@127a7a2e]" started-at="2022-03-07T21:12:34Z" name="calcWithAdjValues" finished-at="2022-03-07T21:12:39Z" duration-ms="5119" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- calcWithAdjValues -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.securion.tests.RetirementCalculatorTest@127a7a2e]" started-at="2022-03-07T20:24:04Z" name="beforeTest" finished-at="2022-03-07T20:24:04Z" duration-ms="146" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.securian.tests.RetirementCalculatorTest@127a7a2e]" started-at="2022-03-07T21:12:39Z" name="beforeTest" finished-at="2022-03-07T21:12:39Z" duration-ms="144" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-      </class> <!-- com.securion.tests.RetirementCalculatorTest -->
+      </class> <!-- com.securian.tests.RetirementCalculatorTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
